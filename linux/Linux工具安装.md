@@ -1,0 +1,207 @@
+# Linux工具安装
+
+## 目录
+
+- [常用网站](#常用网站)
+- [cygwin](#cygwin)
+  - [安装源](#cygwin安装源)
+  - [必需工具](#cygwin必需工具)
+  - [默认进入 zsh](#cygwin_zsh_default)
+  - [安装软件](#cygwin下安装软件)
+  - [常见问题汇总](#cygwin常见问题汇总)
+- [autojump安装和使用](#autojump安装和使用)
+  - [安装](#autojump安装)
+  - [配置](#autojump配置)
+  - [使用](#autojump使用)
+  - [问题解决](#autojump问题解决)
+- [搜狗输入法](#搜狗输入法)
+- [命令行翻译工具](#命令行翻译工具)
+- [git vimdiff查看](#git_vimdiff查看)
+- [Graphviz + CodeViz 生成 C/C++ 函数调用图](#Graphviz_CodeViz)
+
+<a name="通信词典">
+## 常用网站
+</a>
+
+|名称|地址|说明|
+|---|----|----|
+|[通信词典](http://www.mscbsc.com/cidian/)|http://www.mscbsc.com/cidian/|开放、专业、智能的通信词语解释大全|
+|[IETF Tools](https://tools.ietf.org/)|https://tools.ietf.org/|在线查看、下载RFC文档|
+
+<a name="cygwin">
+## cygwin
+</a>
+
+<a name="cygwin安装源">
+### 安装源
+</a>
+
+> http://mirrors.163.com/cygwin/
+> http://www.cygwin.cn/pub/
+> ftp://cygwin.uib.no
+
+<a name="cygwin必需工具">
+### 必需工具
+</a>
+
+|功能|工具|
+|---|:---:|
+|编译工具|gcc make cmake automake libtool|
+|窗口管理器|tmux|
+|编辑器|vim|
+|代码管理|git subversion|
+|下载|wget curl|
+|shell|zsh|
+|man手册|man-pages-posix|
+
+<a name="cygwin_zsh_default">
+### 默认进入 zsh
+</a>
+
+Cygwin中默认进入zsh配置步骤如下：
+1. 编辑~/.bash_profile
+  > `vim ~/.bash_profile`  
+
+2. 在最后一行加入：`exec zsh`
+
+保存退出，下次进入就是 zsh 了。
+
+<a name="cygwin下安装软件">
+### 安装软件
+</a>
+
+很多时候，我们在windows下安装完cygwin后，使用时发现装少了软件。那么怎么办？
+- 1）有的人说用setup.exe那个玩意再搞一遍。个人比较觉得那个方法蛋疼。
+- 2）有的人说用find命令，怎么安装之类的，也不太爽。
+- 3）后来发现**apt-cyg**这个程序，真是强大啊。使用方法和ubuntu下的apt-get一样。爽死啦。
+
+
+安装apt-cyg的方法如下（在cygwin中输入如下命令）：
+> `lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg`
+> `chmod +x /bin/apt-cyg`
+
+使用apt-cyg来安装软件：
+> `apt-cyg install git-core gnupg flex bison gperf build-essential zip curl`
+
+
+<a name="cygwin常见问题汇总">
+### 常见问题汇总
+</a>
+
+1. 编译链接动态库时，出现找不到链接库文件的问题
+  > cygwin中默认搜索后缀名为*.dll的动态库，因此，只需要将原.so的动态库文件链接为.dll即可。
+
+
+<a name="autojump安装和使用">
+## autojump安装和使用
+</a>
+
+<a name="autojump安装">
+## 安装
+</a>
+
+1. 克隆autojump的repo，Terminal下执行：
+  > `git clone git://github.com/joelthelion/autojump.git`
+
+2. 然后进入clone下来的目录，执行安装脚本：
+  > `./install.python`
+
+在安装过程中，会在～/下建立.autojump文件夹。
+
+<a name="autojump配置">
+## 配置
+</a>
+
+1. 首先，在shell的配置文件.zshrc中添加如下配置信息
+  > [[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
+
+2. 重新加载配置文件，令刚才添加的配置信息生效，Terminal下执行：
+  > `source ~/.zshrc`
+
+3. 配置完成
+
+<a name="autojump使用">
+## 使用
+</a>
+
+　　**工作原理**：它会在你每次启动命令时记录你当前位置，并把它添加进它自身的数据库中。这样，某些目录比其它一些目录添加的次数多，这些目录一般就代表你最重要的目录，而它们的“权重”也会增大。
+　　详细使用说明如下：
+
+|功能|命令|说明|
+|---|----|----|
+|目录跳转|j [目录的名字或名字的一部分]|不受当前所在目录的限制|
+|查看当前权重|j --stat|无|
+|进入权重最高的目录|j|无|
+|改变权重值|j -i [权重]<br>j -d [权重]|增加或减少权重|
+
+　　刚开始掌握autojump的使用可能会需要少量的时间和学习成本，但是掌握之后会极大地提高工作效率。  
+　　Autojump：一个可以在Linux文件系统快速导航的高级cd命令：http://www.linuxdiyf.com/linux/13220.html
+
+<a name="autojump问题解决">
+## 问题解决
+</a>
+
+使用中出现了如下问题：
+~~~
+zsh compinit: insecure directories, run compaudit for list.
+Ignore insecure directories and continue [y] or abort compinit [n]?
+~~~
+
+解决方法：
+  > `compaudit | xargs chmod g-w`
+
+<a name="搜狗输入法">
+## 搜狗输入法
+</a>
+
+```
+sudo add-apt-repository ppa:fcitx-team/nightly
+sudo apt-get update
+sudo apt-get install fcitx libopencc-dev libopencc1 fcitx-libs fcitx-libs-dev fcitx-libs-qt
+sudo dpkg -i sogoupinyin_2.0.0.0078_i386.deb
+```
+系统注销或重启后即可使用。
+
+<a name="命令行翻译工具">
+## 命令行翻译工具
+</a>
+
+![linux命令行翻译工具](http://i.imgur.com/09Ldu2W.png "linux命令行翻译工具")
+
+```
+sudo apt-get install ruby
+sudo gem install fy  
+```
+
+<a name="git_vimdiff查看">
+## git vimdiff查看
+</a>
+
+~~~
+git config --global diff.tool vimdiff
+git config --global difftool.prompt false
+git config --global alias.d difftool
+~~~
+Typing `git d` yields the expected behavior, typing `:wq` in vim cycles to the next file in the changeset. 
+
+<a name="Graphviz_CodeViz">
+## Graphviz + CodeViz 生成 C/C++ 函数调用图
+</a>
+
+<a name="Graphviz和CodeViz编译安装">
+### Graphviz和CodeViz编译安装
+</a>
+
+> 1. 安装gcc依赖库
+> `sudo apt-get install libgmp3-dev libmpfr-dev libmpc-dev`
+> 2. 安装图形绘制库
+> `sudo apt-get install graphviz`
+> 3. 安装 GCC
+> 下载gcc-4.6.2.tar.gz到 cd codeviz-1.0.12目录下的compilers里。
+> 下载地址：ftp://ftp.gnu.org/pub/gnu/gcc/gcc-4.6.2/gcc-4.6.2.tar.gz
+> 4. 下载CodeViz
+> `wget -c http://www.csn.ul.ie/~mel/projects/codeviz/codeviz-1.0.12.tar.gz`
+> 5. 安装codeviz
+> `tar -zxvf codeviz-1.0.3.tar.gz`
+> `cd codeviz-1.0.3`
+> `./configure && sudo make install-codeviz`
