@@ -18,6 +18,7 @@
 - [命令行翻译工具](#命令行翻译工具)
 - [git vimdiff查看](#git_vimdiff查看)
 - [Graphviz + CodeViz 生成 C/C++ 函数调用图](#Graphviz_CodeViz)
+- [Ubuntu 安装 PPA 图形化管理软件 Y PPA Manager](y_ppa_manager)
 
 <a name="通信词典">
 ## 常用网站
@@ -205,3 +206,11 @@ Typing `git d` yields the expected behavior, typing `:wq` in vim cycles to the n
 > `tar -zxvf codeviz-1.0.3.tar.gz`
 > `cd codeviz-1.0.3`
 > `./configure && sudo make install-codeviz`
+
+<a name="y_ppa_manager">
+### Ubuntu 安装 PPA 图形化管理软件 Y PPA Manager
+</a>
+
+> `sudo add-apt-repository ppa:webupd8team/y-ppa-manager`
+> `sudo apt-get update`
+> `sudo apt-get install y-ppa-manager`
