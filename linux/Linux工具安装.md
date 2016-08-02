@@ -18,7 +18,9 @@
 - [命令行翻译工具](#命令行翻译工具)
 - [git vimdiff查看](#git_vimdiff查看)
 - [Graphviz + CodeViz 生成 C/C++ 函数调用图](#Graphviz_CodeViz)
-- [Ubuntu 安装 PPA 图形化管理软件 Y PPA Manager](y_ppa_manager)
+- [Ubuntu 安装 PPA 图形化管理软件 Y PPA Manager](#y_ppa_manager)
+- [ubuntu安装python3的python-pip](#pip3)
+- [Linux下最好用的微信客户端](#Electronic_WeChat)
 
 <a name="通信词典">
 ## 常用网站
@@ -214,3 +216,21 @@ Typing `git d` yields the expected behavior, typing `:wq` in vim cycles to the n
 > `sudo add-apt-repository ppa:webupd8team/y-ppa-manager`
 > `sudo apt-get update`
 > `sudo apt-get install y-ppa-manager`
+
+<a name="pip3">
+### ubuntu安装pip3
+</a>
+
+> `sudo apt-get install python3-pip`
+> `sudo pip3 install packagename`
+
+<a name="Electronic_WeChat">
+### Linux下最好用的微信客户端
+</a>
+
+> `# Clone this repository`
+> `git clone https://github.com/geeeeeeeeek/electronic-wechat.git`
+> `# Go into the repository`
+> `cd electronic-wechat`
+> `# Install dependencies and run the app`
+> `npm install && npm start`
