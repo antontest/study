@@ -21,6 +21,7 @@
 - [Ubuntu 安装 PPA 图形化管理软件 Y PPA Manager](#y_ppa_manager)
 - [ubuntu安装python3的python-pip](#pip3)
 - [Linux下最好用的微信客户端](#Electronic_WeChat)
+- [FontAwesome图标字体的代码列表](#FontAwesome)
 
 <a name="通信词典">
 ## 常用网站
@@ -234,3 +235,10 @@ Typing `git d` yields the expected behavior, typing `:wq` in vim cycles to the n
 > `cd electronic-wechat`
 > `# Install dependencies and run the app`
 > `npm install && npm start`
+
+
+<a name="FontAwesome">
+### FontAwesome图标字体的代码列表
+</a>
+
+> [FontAwesome图标字体的代码列表](http://www.bootcss.com/p/font-awesome/design.html)
