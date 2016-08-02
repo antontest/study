@@ -22,6 +22,9 @@
 - [ubuntu安装python3的python-pip](#pip3)
 - [Linux下最好用的微信客户端](#Electronic_WeChat)
 - [FontAwesome图标字体的代码列表](#FontAwesome)
+- [Markdown软件Haroopad安装](#Haroopad)
+- [加快npm下载速度的方法](#加快npm下载速度的方法)
+- [Haroopad中使用mermaid画流程图](#Haroopad中使用mermaid画流程图)
 
 <a name="通信词典">
 ## 常用网站
@@ -198,13 +201,17 @@ Typing `git d` yields the expected behavior, typing `:wq` in vim cycles to the n
 
 > 1. 安装gcc依赖库
 > `sudo apt-get install libgmp3-dev libmpfr-dev libmpc-dev`
+
 > 2. 安装图形绘制库
 > `sudo apt-get install graphviz`
+
 > 3. 安装 GCC
 > 下载gcc-4.6.2.tar.gz到 cd codeviz-1.0.12目录下的compilers里。
 > 下载地址：ftp://ftp.gnu.org/pub/gnu/gcc/gcc-4.6.2/gcc-4.6.2.tar.gz
+
 > 4. 下载CodeViz
 > `wget -c http://www.csn.ul.ie/~mel/projects/codeviz/codeviz-1.0.12.tar.gz`
+
 > 5. 安装codeviz
 > `tar -zxvf codeviz-1.0.3.tar.gz`
 > `cd codeviz-1.0.3`
@@ -242,3 +249,58 @@ Typing `git d` yields the expected behavior, typing `:wq` in vim cycles to the n
 </a>
 
 > [FontAwesome图标字体的代码列表](http://www.bootcss.com/p/font-awesome/design.html)
+
+<a name="Haroopad">
+### Markdown软件Haroopad安装
+</a>
+
+1. Haroopad下载
+> [https://bitbucket.org/rhiokim/haroopad-download/downloads](https://bitbucket.org/rhiokim/haroopad-download/downloads) 或者 [http://pad.haroopress.com/user.html#download](http://pad.haroopress.com/user.html#download)
+
+2. 安装
+> `wget https://bitbucket.org/rhiokim/haroopad-download/downloads/haroopad-v0.12.2-i386.deb`
+> `sudo apt-get install gdebi`
+> `sudo gdebi haroopad-v0.12.2-i386.deb`
+
+3. Haroopad使用
+> Haroopad使用可参考文章: *[最好用的离线markdown编辑器Haroopad介绍](http://www.jianshu.com/p/1ff6e833e2e6/comments/2758337)*。
+
+4. 其他
+> 安装步骤还可参照文章: *[How To Install Haroopad 0.12.2 On Ubuntu, Debian And Derivative Systems](http://linuxg.net/how-to-install-haroopad-0-12-2-on-ubuntu-debian-and-derivative-systems/)*.
+
+<a name="加快npm下载速度的方法">
+### 加快npm下载速度的方法
+</a>
+
+1. 关闭npm的https
+> `npm config set strict-ssl false`
+
+2. 设置npm的获取地址
+> `npm config set registry "http://registry.npmjs.org/"`
+
+3. 增加参数查看进度
+> 为了解决安装时卡着没反应，聪明的人类发现了可以加参数，例如：
+> `npm install hexo -g --verbose`
+
+4. 使用smart-npm加快下载速度
+> `npm install --global smart-npm --registry=https://registry.npm.taobao.org/`
+
+5. 其他
+> 其他方法可参考文章: [NPM太慢了怎么办](http://www.tuicool.com/articles/eUJNfm)
+
+<a name="Haroopad中使用mermaid画流程图">
+### Haroopad中使用mermaid画流程图
+</a>
+
+1. 安装mermaid
+> `npm install -g mermaid`
+> `npm install -g phantomjs`
+
+2. 使用
+~~~mermaid
+graph TD;
+	A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+~~~
