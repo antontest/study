@@ -284,9 +284,10 @@ Typing `git d` yields the expected behavior, typing `:wq` in vim cycles to the n
 
 4. 使用smart-npm加快下载速度
 > `npm install --global smart-npm --registry=https://registry.npm.taobao.org/`
+> 安装可参考*[smart-npm](https://github.com/qiu8310/smart-npm)*
 
 5. 其他
-> 其他方法可参考文章: [NPM太慢了怎么办](http://www.tuicool.com/articles/eUJNfm)
+> 其他方法可参考文章: *[NPM太慢了怎么办](http://www.tuicool.com/articles/eUJNfm)*、*[加快npm的下载速度](http://cnodejs.org/topic/53330242edf0031c2c00ca81)*
 
 <a name="Haroopad中使用mermaid画流程图">
 ### Haroopad中使用mermaid画流程图
@@ -297,10 +298,25 @@ Typing `git d` yields the expected behavior, typing `:wq` in vim cycles to the n
 > `npm install -g phantomjs`
 
 2. 使用
+代码如下：  
+```
 ~~~mermaid
-graph TD;
+graph LR;
 	A-->B;
     A-->C;
     B-->D;
     C-->D;
 ~~~
+```
+效果如下：  
+~~~mermaid
+graph LR;
+	A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+~~~
+
+说明：
+1. 安装步骤可参考文章*[用代码画流程图和时序图快餐教程(2) - mermaid数据流图速成](https://yq.aliyun.com/articles/53909)*；
+2. mermaid使用可参考*[http://knsv.github.io/mermaid/mermaidCLI.html](http://knsv.github.io/mermaid/mermaidCLI.html)*；
