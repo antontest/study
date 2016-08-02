@@ -11,6 +11,7 @@
 |插件|功能|重要性|
 |----|----|----|
 |[Thunderbird Conversations](https://addons.mozilla.org/zh-CN/thunderbird/addon/gmail-conversation-view/?src=search)|必装型插件。可以将同组邮件按照Gmail的样式进行整理，对层级关系也进行了更好的处理，毫不夸张的说装上这个插件，Thunderbird是瞬间就变得高大上了。|必装|
+|[No Small Text](https://addons.mozilla.org/en-US/thunderbird/addon/no-small-text/versions/)|Easily set a minimum font size for all web content.|必装|
 |[Manually Sort Folders](https://addons.mozilla.org/zh-CN/thunderbird/addon/manually-sort-folders/?src=search)|强迫症患者必备，尤其是对于新建了多个自定义文件夹的人而言，可以自主的调整文件夹的上下位置是多么必备的功能啊。|必装|
 |[Color Folders](https://addons.mozilla.org/zh-CN/thunderbird/addon/color-folders/?src=search)|可以对文件夹的增加颜色分类，便于将不同类型的文件夹一目了然的快速分开，小功能大用途。|必装|
 |[Hide Local Folders](https://addons.mozilla.org/zh-CN/thunderbird/addon/hide-local-folders/?src=search)|对我这种一向只用IMAP协议的邮箱使用者而言，本地文件夹基本上用不上，因此强迫症是一定要把它隐藏掉的。|必装|
