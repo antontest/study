@@ -28,6 +28,8 @@
 - [Linux 系统实时监控的瑞士军刀 —— Glances](#Linux 系统实时监控的瑞士军刀_Glances)
 - [j4-dmenu-desktop](#j4_dmenu_desktop)
 - [dmenu-extended](#dmenu_xtended)
+- [i3-xfce](#i3_xfce)
+- [unity-tweak-tool修改系统字体](#unity_tweak_tool)
 
 <a name="通信词典">
 ## 常用网站
@@ -353,3 +355,20 @@ graph LR;
 > `git clone https://github.com/markjones112358/dmenu-extended` 
 > `cd dmenu-extended` 
 > `sudo python setup.py install` 
+
+<a name="i3_xfce">
+### i3-xfce
+</a>
+
+> `sudo add-apt-repository ppa:ansible/ansible`
+> `sudo add-apt-repository ppa:aacebedo/i3-xfce-stable`
+> `sudo apt-get update`
+> `sudo apt-get install i3-xfce`
+> `sudo i3-xfce install`
+
+<a name="unity_tweak_tool">
+### unity-tweak-tool修改系统字体
+</a>
+
+> `sudo apt-get install unity-tweak-tool ` 
+
