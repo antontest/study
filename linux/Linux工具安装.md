@@ -25,6 +25,7 @@
 - [Markdown软件Haroopad安装](#Haroopad)
 - [加快npm下载速度的方法](#加快npm下载速度的方法)
 - [Haroopad中使用mermaid画流程图](#Haroopad中使用mermaid画流程图)
+- [Linux 系统实时监控的瑞士军刀 —— Glances](#Linux 系统实时监控的瑞士军刀_Glances)
 
 <a name="通信词典">
 ## 常用网站
@@ -320,3 +321,13 @@ graph LR;
 说明：
 1. 安装步骤可参考文章*[用代码画流程图和时序图快餐教程(2) - mermaid数据流图速成](https://yq.aliyun.com/articles/53909)*；
 2. mermaid使用可参考*[http://knsv.github.io/mermaid/mermaidCLI.html](http://knsv.github.io/mermaid/mermaidCLI.html)*；
+
+<a name="Linux 系统实时监控的瑞士军刀_Glances">
+### Linux 系统实时监控的瑞士军刀 —— Glances
+</a>
+
+> `sudo apt-add-repository ppa:arnaud-hartmann/glances-stable`
+> `sudo apt-get update`
+> `sudo apt-get install glances```language
+
+说明：安装及说明可参考*[Linux 系统实时监控的瑞士军刀 —— Glances](https://linux.cn/article-2782-1.html)* 或者 *[使用资源监控工具 glances](http://www.ibm.com/developerworks/cn/linux/1304_caoyq_glances/)*。
