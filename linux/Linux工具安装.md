@@ -30,6 +30,7 @@
 - [dmenu-extended](#dmenu_xtended)
 - [i3-xfce](#i3_xfce)
 - [unity-tweak-tool修改系统字体](#unity_tweak_tool)
+- [Oh My Zsh](#Oh_My_Zsh )
 
 <a name="通信词典">
 ## 常用网站
@@ -109,7 +110,7 @@ Cygwin中默认进入zsh配置步骤如下：
 </a>
 
 <a name="autojump安装">
-## 安装
+### 安装
 </a>
 
 1. 克隆autojump的repo，Terminal下执行：
@@ -121,7 +122,7 @@ Cygwin中默认进入zsh配置步骤如下：
 在安装过程中，会在～/下建立.autojump文件夹。
 
 <a name="autojump配置">
-## 配置
+### 配置
 </a>
 
 1. 首先，在shell的配置文件.zshrc中添加如下配置信息
@@ -133,7 +134,7 @@ Cygwin中默认进入zsh配置步骤如下：
 3. 配置完成
 
 <a name="autojump使用">
-## 使用
+### 使用
 </a>
 
 　　**工作原理**：它会在你每次启动命令时记录你当前位置，并把它添加进它自身的数据库中。这样，某些目录比其它一些目录添加的次数多，这些目录一般就代表你最重要的目录，而它们的“权重”也会增大。
@@ -150,7 +151,7 @@ Cygwin中默认进入zsh配置步骤如下：
 　　Autojump：一个可以在Linux文件系统快速导航的高级cd命令：http://www.linuxdiyf.com/linux/13220.html
 
 <a name="autojump问题解决">
-## 问题解决
+### 问题解决
 </a>
 
 使用中出现了如下问题：
@@ -223,7 +224,7 @@ Typing `git d` yields the expected behavior, typing `:wq` in vim cycles to the n
 > `./configure && sudo make install-codeviz`
 
 <a name="y_ppa_manager">
-### Ubuntu 安装 PPA 图形化管理软件 Y PPA Manager
+## Ubuntu 安装 PPA 图形化管理软件 Y PPA Manager
 </a>
 
 > `sudo add-apt-repository ppa:webupd8team/y-ppa-manager`
@@ -231,14 +232,14 @@ Typing `git d` yields the expected behavior, typing `:wq` in vim cycles to the n
 > `sudo apt-get install y-ppa-manager`
 
 <a name="pip3">
-### ubuntu安装pip3
+## ubuntu安装pip3
 </a>
 
 > `sudo apt-get install python3-pip`
 > `sudo pip3 install packagename`
 
 <a name="Electronic_WeChat">
-### Linux下最好用的微信客户端
+## Linux下最好用的微信客户端
 </a>
 
 > `# Clone this repository`
@@ -250,13 +251,13 @@ Typing `git d` yields the expected behavior, typing `:wq` in vim cycles to the n
 
 
 <a name="FontAwesome">
-### FontAwesome图标字体的代码列表
+## FontAwesome图标字体的代码列表
 </a>
 
 > [FontAwesome图标字体的代码列表](http://www.bootcss.com/p/font-awesome/design.html)
 
 <a name="Haroopad">
-### Markdown软件Haroopad安装
+## Markdown软件Haroopad安装
 </a>
 
 1. Haroopad下载
@@ -274,7 +275,7 @@ Typing `git d` yields the expected behavior, typing `:wq` in vim cycles to the n
 > 安装步骤还可参照文章: *[How To Install Haroopad 0.12.2 On Ubuntu, Debian And Derivative Systems](http://linuxg.net/how-to-install-haroopad-0-12-2-on-ubuntu-debian-and-derivative-systems/)*.
 
 <a name="加快npm下载速度的方法">
-### 加快npm下载速度的方法
+## 加快npm下载速度的方法
 </a>
 
 1. 关闭npm的https
@@ -295,7 +296,7 @@ Typing `git d` yields the expected behavior, typing `:wq` in vim cycles to the n
 > 其他方法可参考文章: *[NPM太慢了怎么办](http://www.tuicool.com/articles/eUJNfm)*、*[加快npm的下载速度](http://cnodejs.org/topic/53330242edf0031c2c00ca81)*
 
 <a name="Haroopad中使用mermaid画流程图">
-### Haroopad中使用mermaid画流程图
+## Haroopad中使用mermaid画流程图
 </a>
 
 1. 安装mermaid
@@ -327,7 +328,7 @@ graph LR;
 2. mermaid使用可参考*[http://knsv.github.io/mermaid/mermaidCLI.html](http://knsv.github.io/mermaid/mermaidCLI.html)*；
 
 <a name="Linux 系统实时监控的瑞士军刀_Glances">
-### Linux 系统实时监控的瑞士军刀 —— Glances
+## Linux 系统实时监控的瑞士军刀 —— Glances
 </a>
 
 > `sudo apt-add-repository ppa:arnaud-hartmann/glances-stable`
@@ -337,7 +338,7 @@ graph LR;
 说明：安装及说明可参考*[Linux 系统实时监控的瑞士军刀 —— Glances](https://linux.cn/article-2782-1.html)* 或者 *[使用资源监控工具 glances](http://www.ibm.com/developerworks/cn/linux/1304_caoyq_glances/)*。
 
 <a name="j4_dmenu_desktop">
-### j4-dmenu-desktop
+## j4-dmenu-desktop
 </a>
 
 > `git clone https://github.com/enkore/j4-dmenu-desktop`
@@ -348,7 +349,7 @@ graph LR;
 > `sudo make install` 
 
 <a name="dmenu_xtended">
-### dmenu-extended
+## dmenu-extended
 </a>
 
 > `sudo apt-get install suckless-tools xfonts-terminus` 
@@ -357,7 +358,7 @@ graph LR;
 > `sudo python setup.py install` 
 
 <a name="i3_xfce">
-### i3-xfce
+## i3-xfce
 </a>
 
 > `sudo add-apt-repository ppa:ansible/ansible`
@@ -367,8 +368,27 @@ graph LR;
 > `sudo i3-xfce install`
 
 <a name="unity_tweak_tool">
-### unity-tweak-tool修改系统字体
+## unity-tweak-tool修改系统字体
 </a>
 
 > `sudo apt-get install unity-tweak-tool ` 
 
+<a name="Oh_My_Zsh">
+## Oh My Zsh 
+</a>
+
+<a name="Oh_My_Zsh安装">
+### 安装
+</a>
+
+> `sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"` 
+
+<a name="Oh_My_Zsh插件">
+### 插件
+</a>
+
+> 1. `git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions` 
+> 2. `git clone git://github.com/jimmijj/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting`
+
+同时，在~/.zshrc中配置如下参数：  
+> `plugins+=(zsh-syntax-highlighting zsh-completions)`
