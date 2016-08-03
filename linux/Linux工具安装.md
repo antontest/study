@@ -26,6 +26,8 @@
 - [加快npm下载速度的方法](#加快npm下载速度的方法)
 - [Haroopad中使用mermaid画流程图](#Haroopad中使用mermaid画流程图)
 - [Linux 系统实时监控的瑞士军刀 —— Glances](#Linux 系统实时监控的瑞士军刀_Glances)
+- [j4-dmenu-desktop](#j4_dmenu_desktop)
+- [dmenu-extended](#dmenu_xtended)
 
 <a name="通信词典">
 ## 常用网站
@@ -331,3 +333,23 @@ graph LR;
 > `sudo apt-get install glances```language
 
 说明：安装及说明可参考*[Linux 系统实时监控的瑞士军刀 —— Glances](https://linux.cn/article-2782-1.html)* 或者 *[使用资源监控工具 glances](http://www.ibm.com/developerworks/cn/linux/1304_caoyq_glances/)*。
+
+<a name="j4_dmenu_desktop">
+### j4-dmenu-desktop
+</a>
+
+> `git clone https://github.com/enkore/j4-dmenu-desktop`
+> `cd j4-dmenu-desktop`
+> `mkdir build && cd build` 
+> `cmake ..` 
+> `make` 
+> `sudo make install` 
+
+<a name="dmenu_xtended">
+### dmenu-extended
+</a>
+
+> `sudo apt-get install suckless-tools xfonts-terminus` 
+> `git clone https://github.com/markjones112358/dmenu-extended` 
+> `cd dmenu-extended` 
+> `sudo python setup.py install` 
