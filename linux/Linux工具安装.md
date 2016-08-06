@@ -32,6 +32,7 @@
 - [unity-tweak-tool修改系统字体](#unity_tweak_tool)
 - [Oh My Zsh](#Oh_My_Zsh)
 - [极速蜗牛：apt-fast](#apt_fast)
+- [Linux下的简单好用的计算器bc](#Linux下的简单好用的计算器bc)
 
 <a name="通信词典">
 ## 常用网站
@@ -411,3 +412,32 @@ graph LR;
 　　Ubuntu/Mint：
 
     MIRRORS=('http://us.archive.ubuntu.com/ubuntu,http://mirror.cc.columbia.edu/pub/linux/ubuntu/archive/,http://mirror.cc.vt.edu/pub2/ubuntu/,http://mirror.umd.edu/ubuntu/,http://mirrors.mit.edu/ubuntu/')
+
+<a name="Linux下的简单好用的计算器bc">
+## Linux下的简单好用的计算器bc
+</a>
+
+1. 关于bc
+bc是任意精度计算器语言，通常在linux下当计算器用，简单好用。相当于windows下的计算器。
+
+2. 支持的运算符
+基本的数学运算： + 加法 - 减法 * 乘法 / 除法 ^ 指数 % 余数
+还支持表达式， 逻辑运算， 数学函数。
+
+3. 使用
+在linux下输入bc
+
+        $ bc
+        bc 1.06
+        Copyright 1991-1994, 1997, 1998, 2000 Free Software Foundation, Inc.
+        This is free software with ABSOLUTELY NO WARRANTY.
+        For details type `warranty'.
+然后输入运算，按回车会输出运算结果
+
+        2+5
+        7
+
+4. 通过管道
+bc支持传入参数方式。下面使用管道来试试。 
+        $ echo "3+4" | bc
+        7
