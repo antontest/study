@@ -30,7 +30,8 @@
 - [dmenu-extended](#dmenu_xtended)
 - [i3-xfce](#i3_xfce)
 - [unity-tweak-tool修改系统字体](#unity_tweak_tool)
-- [Oh My Zsh](#Oh_My_Zsh )
+- [Oh My Zsh](#Oh_My_Zsh)
+- [极速蜗牛：apt-fast](#apt_fast)
 
 <a name="通信词典">
 ## 常用网站
@@ -392,3 +393,15 @@ graph LR;
 
 同时，在~/.zshrc中配置如下参数：  
 > `plugins+=(zsh-syntax-highlighting zsh-completions)`
+
+<a name="apt_fast">
+## 极速蜗牛：apt-fast
+</a>
+
+　　如果你在Debian或Ubuntu系统上经常感觉到apt-get 或 aptitude包安装速度过慢，那么这里就有几种改善这一情况的方法。你有没有考虑过改变正被使用的默认镜像站点？你有没有排除因特网连接的上游带宽成为瓶颈的可能？
+　　如果不是这些原因，你可以尝试第三个选择：使用apt-fast工具。apt-fast实际上是一个围绕apt-get和aptitude所写的shell脚本容器，它能加速包的下载速度。apt-fast本质上采用aria2下载工具，这款工具能够以“块”的方式从多个镜像并行下载一个文件（就像BitTorrent下载）。
+　　Ubuntu 14.04 以及更高版本安装：  
+
+> `sudo add-apt-repository ppa:saiarcot895/myppa`
+> `sudo apt-get update`
+> `sudo apt-get install apt-fast`
