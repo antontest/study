@@ -405,3 +405,9 @@ graph LR;
 > `sudo add-apt-repository ppa:saiarcot895/myppa`
 > `sudo apt-get update`
 > `sudo apt-get install apt-fast`
+
+　　选择完那些地理上靠近你的镜像后，你需按照下面的格式将选择的镜像加入到/etc/apt-fast.conf。
+
+　　Ubuntu/Mint：
+
+    MIRRORS=('http://us.archive.ubuntu.com/ubuntu,http://mirror.cc.columbia.edu/pub/linux/ubuntu/archive/,http://mirror.cc.vt.edu/pub2/ubuntu/,http://mirror.umd.edu/ubuntu/,http://mirrors.mit.edu/ubuntu/')
