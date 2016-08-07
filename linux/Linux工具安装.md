@@ -32,7 +32,9 @@
 - [unity-tweak-tool修改系统字体](#unity_tweak_tool)
 - [Oh My Zsh](#Oh_My_Zsh)
 - [极速蜗牛：apt-fast](#apt_fast)
-- [Linux下的简单好用的计算器bc](#Linux下的简单好用的计算器bc)
+- [Linux下的简单好用的计算器bc](#Linux下的简单好用的计算器bc)sudo apt-get update
+sudo apt-get install i3 i3-wm i3blocks i3lock i3status 
+- [i3 window manager](#i3_manager)
 
 <a name="通信词典">
 ## 常用网站
@@ -441,3 +443,17 @@ bc是任意精度计算器语言，通常在linux下当计算器用，简单好�
 bc支持传入参数方式。下面使用管道来试试。 
         $ echo "3+4" | bc
         7
+
+<a name="i3_manager">
+## i3 window manager
+</a>
+
+### 安装
+
+> `sudo apt-get update`
+> `sudo apt-get install i3 i3-wm i3blocks i3lock i3status`
+> `sudo apt-get install pactl xbacklight`
+> `sudo apt-get install rofi`
+> `sudo apt-get install compton`
+
+可参考文章：[setupi3](https://github.com/alexbooker/setupi3)。
